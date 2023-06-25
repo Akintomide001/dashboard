@@ -25,6 +25,10 @@ import editIcon from '@iconify/icons-dashicons/edit';
 export default function Home() {
   return (
     <>
+    <Head>
+        <title>Dashboard ‹ Tommy Blog — WordPress</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Header />
       <div className='main'>
         <div>
