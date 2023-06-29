@@ -136,6 +136,9 @@ color: #72aee6;
     .side-bar{
         display: inline-block;
     }
+    .sidebar-1{
+        height: 80%;
+    }
     .sidebar-2{
         width: 130px;
     }

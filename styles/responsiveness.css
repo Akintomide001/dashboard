@@ -1,0 +1,13 @@
+@media screen and (max-width: 505px){
+.main-body{
+padding-top: 45px;
+padding-left: 20px;
+}
+.menu-3-1 p a{
+    display: block;
+    margin-left: 0;
+    width: fit-content;
+    margin-top: 3px;
+    padding-bottom: 8px;
+}
+}
