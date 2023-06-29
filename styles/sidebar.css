@@ -74,6 +74,9 @@
 .dropdown0:hover{
     color: #72aee6;
 }
+.dropdown0:active{
+    color: #72aee6;
+}
 /* dropdown */
 @media screen and (max-width: 990px){
     .iconify-1{

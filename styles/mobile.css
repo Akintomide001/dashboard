@@ -146,9 +146,5 @@ color: #72aee6;
     .side{
         display: none;
     }
-    .mobile-list-i:hover > ul{
-        visibility: visible;
-    }
-    
     
 }
