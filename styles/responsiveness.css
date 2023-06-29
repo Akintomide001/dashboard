@@ -1,4 +1,4 @@
-@media screen and (max-width: 505px){
+/* @media screen and (max-width: 505px){
 .main-body{
 padding-top: 45px;
 padding-left: 20px;
@@ -101,4 +101,7 @@ padding-left: 20px;
 .title-1 button{
     font-size: 11px;
 }
+#update{
+    display: none;
 }
+} */

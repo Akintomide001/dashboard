@@ -36,7 +36,7 @@ export default function Mobile() {
                                         <li><a href="">Visit Website</a></li>
                                     </ul>
                                 </li>
-                                <li className="mobile-list-2">
+                                <li className="mobile-list-2" id="update">
                                     <a href=""><Icon icon={updateIcon} className="dropdown-1" /></a>
                                 </li>
                                 <li className="mobile-list-2">

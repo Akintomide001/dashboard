@@ -67,11 +67,6 @@ color: #72aee6;
 .mobile-list-1i{
     padding-left: 20px;
 }
-/* .mobile-list-1i a{
-    width: 50px;
-    background-color: aqua;
-    height: 40px;
-} */
 .mobile-list-1i ul{
     background-color:  #2c3338;
     list-style: none;
@@ -151,5 +146,9 @@ color: #72aee6;
     .side{
         display: none;
     }
+    .mobile-list-i:hover > ul{
+        visibility: visible;
+    }
+    
     
 }
