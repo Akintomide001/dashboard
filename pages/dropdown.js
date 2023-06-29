@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Icon } from '@iconify/react';
 import menuAlt3 from '@iconify/icons-dashicons/menu-alt3';
 import { useEffect, useRef, } from "react";
+import Sidebar from "./sidebar";
 
 export default function Dropdown() {
     const showNavMenu = useRef();
@@ -21,27 +22,19 @@ export default function Dropdown() {
     return (
 
         <>
-            <div className="nav-menu" ref={navMenu}>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Products/produce</a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">Blog</a></li>
-                    <button className="btn"><a href="">Contact Us</a></button>
-                </ul>
+            <div className="nav-menu" style={{display:"none"}} ref={navMenu}>
+                <Sidebar />
+
             </div>
             <div>
-                <div ref={showNavMenu} onClick={() => {
-                    navMenu.current.style.display = "flex";
-                    setCurrentlyShowing(!currentlyShowing)
-                }} className="open-menu"><Icon icon={menuAlt3} /></div>
                 <div ref={hideNavMenu} onClick={() => {
                     navMenu.current.style.display = "none";
                     setCurrentlyShowing(!currentlyShowing)
-                }} className="close-menu"><Icon icon={menuAlt3} /></div>
-
+                }} className="close-menu"><Icon icon={menuAlt3} className="dropdown0" /></div>
+                <div ref={showNavMenu} onClick={() => {
+                    navMenu.current.style.display = "flex";
+                    setCurrentlyShowing(!currentlyShowing)
+                }} className="open-menu"><Icon icon={menuAlt3} className="dropdown0" /></div>
                 {/*mobile menu*/}
                 {/*mobile menu end*/}
             </div>

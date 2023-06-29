@@ -241,4 +241,9 @@
     top: 2px;
     padding-left: 5px;
 }
+@media screen and (max-width: 505px){
+    .desktop-menu{
+        display: none;
+    }
+}
 /* section-2 end */

@@ -21,8 +21,20 @@ import arrowDownAlt2 from '@iconify/icons-dashicons/arrow-down-alt2';
 import arrowUp from '@iconify/icons-dashicons/arrow-up'
 import plusIcon from '@iconify/icons-dashicons/plus';
 import editIcon from '@iconify/icons-dashicons/edit';
+import Mobile from './mobile'
+import { useEffect, useRef, useState } from 'react'
 
 export default function Home() {
+  const hideNotification = useRef()
+  const [currentlyShowing, setCurrentlyShowing] = useState(true)
+
+    useEffect(() => {
+        if (!currentlyShowing) {
+            hideNotification.current.style.display = "none"
+        } else {
+            hideNotification.current.style.display = "flex"
+        }
+    }, [currentlyShowing])
   return (
     <>
     <Head>
@@ -30,8 +42,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header />
+      <Mobile />
       <div className='main'>
-        <div>
+        <div className='side'>
           <Sidebar />
         </div>
         <div className='main-body'>
@@ -39,7 +52,7 @@ export default function Home() {
             <button className='main-button-1'>Screen option   <Icon icon={arrowDown} className='menu-icon' /></button>
             <button className='main-button-2'>Help<Icon icon={arrowDown} className='menu-icon' /></button>
           </div>
-          <div className='main-2'>
+          <div className='main-2' ref={hideNotification} style={{display: currentlyShowing ? "flex" : "none"}}>
             <div className='space'>
               <div className='jet-logo'>
                 <Image src={jetpack} alt='/' className="jet" />
@@ -53,7 +66,7 @@ export default function Home() {
             {/*   */}
             <div className='menu-2-b'>
               <div className='bot'><button className='menu-2btn'>Update Now</button></div>
-              <div><FaTimes className='menu2-times' /></div>
+              <div><FaTimes onClick={()=>setCurrentlyShowing(!currentlyShowing)} className='menu2-times' /></div>
 
             </div>
           </div>

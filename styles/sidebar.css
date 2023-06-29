@@ -57,6 +57,24 @@
     padding-bottom: 3px;
     padding-left: 5px;
 }
+/* dropdown */
+.dropdown{
+    font-size: 30px;
+    font-weight: 400;
+    color: #9ba2a6;
+    line-height: 40px;
+}
+.dropdown0{
+    font-size: 30px;
+    font-weight: 400;
+    color: #9ba2a6;
+    line-height: 40px;
+    margin-left: 20px;
+}
+.dropdown0:hover{
+    color: #72aee6;
+}
+/* dropdown */
 @media screen and (max-width: 990px){
     .iconify-1{
         display: inline-block;
