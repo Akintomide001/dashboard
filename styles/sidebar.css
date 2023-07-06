@@ -77,6 +77,32 @@
 .dropdown0:active{
     color: #72aee6;
 }
+.sidebar-home{
+    background-color: #2c3338;
+    /* padding-left: 12px; */
+    margin-top: 5px;
+    padding-bottom: 10px;
+    padding-top: 2px;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.sidebar-home li{
+    padding-top: 10px;
+}
+.home-1{
+    color: white;
+    padding-left: 12px;
+}
+.home-1:hover{
+    border-left: 4px solid white;
+}
+.update-1{
+    padding-left: 12px;
+}
+.update-1:hover{
+    border-left: 4px solid  #72aee6;
+}
 /* dropdown */
 @media screen and (max-width: 990px){
     .iconify-1{
