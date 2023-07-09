@@ -13,6 +13,7 @@ padding-bottom: 40px;
     padding-right: 20px;
     padding-top: 40px;
     width: 100%;
+    margin: auto;
 }
 .main-1{
     float: right;
@@ -506,6 +507,7 @@ font-size: 13px;
         /* padding-left: 200px; */
         font-weight: 200;
         width: 20%;
+
     }
     
 }
