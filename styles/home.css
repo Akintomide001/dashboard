@@ -244,10 +244,16 @@ padding-bottom: 40px;
 .menu-5-span{
     margin-top: 10px;
 }
+.menu-55{
+    display: flex;
+    justify-content: space-between; 
+    background-color: #2271b1;
+    width: 100%;
+}
 .times-5{
     /* padding-left: 200px; */
     font-weight: 200;
-    width: 20%;
+    background-color: #069e08;
 }
 .span-times{
     float: right;

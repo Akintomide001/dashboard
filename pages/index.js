@@ -28,16 +28,16 @@ export default function Home() {
   const hideNotification = useRef()
   const [currentlyShowing, setCurrentlyShowing] = useState(true)
 
-    useEffect(() => {
-        if (!currentlyShowing) {
-            hideNotification.current.style.display = "none"
-        } else {
-            hideNotification.current.style.display = "flex"
-        }
-    }, [currentlyShowing])
+  useEffect(() => {
+    if (!currentlyShowing) {
+      hideNotification.current.style.display = "none"
+    } else {
+      hideNotification.current.style.display = "flex"
+    }
+  }, [currentlyShowing])
   return (
     <>
-    <Head>
+      <Head>
         <title>Dashboard ‹ Tommy Blog — WordPress</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
@@ -52,7 +52,7 @@ export default function Home() {
             <button className='main-button-1'>Screen option   <Icon icon={arrowDown} className='menu-icon' /></button>
             <button className='main-button-2'>Help<Icon icon={arrowDown} className='menu-icon' /></button>
           </div>
-          <div className='main-2' ref={hideNotification} style={{display: currentlyShowing ? "flex" : "none"}}>
+          <div className='main-2' ref={hideNotification} style={{ display: currentlyShowing ? "flex" : "none" }}>
             <div className='space'>
               <div className='jet-logo'>
                 <Image src={jetpack} alt='/' className="jet" />
@@ -66,7 +66,7 @@ export default function Home() {
             {/*   */}
             <div className='menu-2-b'>
               <div className='bot'><button className='menu-2btn'>Update Now</button></div>
-              <div><FaTimes onClick={()=>setCurrentlyShowing(!currentlyShowing)} className='menu2-times' /></div>
+              <div><FaTimes onClick={() => setCurrentlyShowing(!currentlyShowing)} className='menu2-times' /></div>
 
             </div>
           </div>
@@ -113,19 +113,22 @@ export default function Home() {
             <div className='aside-5'>
               <Icon icon={elementorIcon} className='aside-icon' />
             </div>
-            <div className='menu-5a'>
-              <h3>Love using Elementor?</h3>
-              <p>Become a super contributor by opting in to share non-sensitive plugin data and to receive periodic email updates from us.
-                <a href=''> Learn more.</a>
-              </p>
-              <div className='menu-5-span'>
-                <a href='' className='m-span-1'><span >Sure! i'd love to help</span></a>
-                <a href=''><span className='m-span-2'>No thanks</span></a>
+            <div className='menu-55'>
+              <div className='menu-5a'>
+                <h3>Love using Elementor?</h3>
+                <p>Become a super contributor by opting in to share non-sensitive plugin data and to receive periodic email updates from us.
+                  <a href=''> Learn more.</a>
+                </p>
+                <div className='menu-5-span'>
+                  <a href='' className='m-span-1'><span >Sure! i'd love to help</span></a>
+                  <a href=''><span className='m-span-2'>No thanks</span></a>
+                </div>
+              </div>
+              <div className='times-5'>
+                <FaTimes className='span-times' />
               </div>
             </div>
-            <div className='times-5'>
-              <FaTimes className='span-times' />
-            </div>
+
           </div>
           {/* menu-5 */}
           {/* menu-6 */}
