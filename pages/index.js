@@ -136,6 +136,7 @@ export default function Home() {
             <div className='menu-6-image'>
               <Image src={header} alt='/' className="menu-img" />
             </div>
+            <div className='menu-66'>
             <div className='menu-6a'>
               <p>Hello! Seems like you have used Elementor Header & Footer Builder to build this website — Thanks a ton!</p>
               <p className='p-menu'>Could you please do us a BIG favor and give it a 5-star rating on WordPress? This would boost our motivation and help other users make a comfortable decision while choosing the Elementor Header & Footer Builder.</p>
@@ -147,6 +148,7 @@ export default function Home() {
             </div>
             <div className='menu-6-close'>
               <Icon icon={dismissIcon} className='icon-6' />
+            </div>
             </div>
           </div>
           {/* menu-6 */}

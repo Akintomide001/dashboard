@@ -12,9 +12,7 @@ padding-bottom: 40px;
     padding-left: 180px;
     padding-right: 20px;
     padding-top: 40px;
-    /* width: 100%; */
-    max-width: 1500px;
-    margin: auto;
+    width: 100%; 
 }
 .main-1{
     float: right;
@@ -301,6 +299,11 @@ padding-bottom: 40px;
 .menu-6a{
     padding-left: 20px;
 }
+.menu-66{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 .menu-6ai{
     margin-top: 10px;
 }
@@ -509,13 +512,6 @@ font-size: 13px;
     .main-body{
         padding-left: 60px;
     }
-    .times-5{
-        /* padding-left: 200px; */
-        font-weight: 200;
-        width: 20%;
-
-    }
-    
 }
 @media screen and (max-width: 505px){
     @media screen and (max-width: 505px){
